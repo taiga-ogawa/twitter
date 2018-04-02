@@ -1,0 +1,55 @@
+2018-03-15T21:21:52.473+0900 I CONTROL  [initandlisten] MongoDB starting : pid=12983 port=27017 dbpath=/Users/taiga/twitter/mongoDB/data 64-bit host=ogawataiganoMacBook-puro.local
+2018-03-15T21:21:52.473+0900 I CONTROL  [initandlisten] db version v3.6.3
+2018-03-15T21:21:52.473+0900 I CONTROL  [initandlisten] git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
+2018-03-15T21:21:52.473+0900 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-03-15T21:21:52.475+0900 I CONTROL  [initandlisten] allocator: system
+2018-03-15T21:21:52.475+0900 I CONTROL  [initandlisten] modules: none
+2018-03-15T21:21:52.476+0900 I CONTROL  [initandlisten] build environment:
+2018-03-15T21:21:52.476+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2018-03-15T21:21:52.476+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-03-15T21:21:52.476+0900 I CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "twitter/mongoDB/data" }, systemLog: { destination: "file", path: "twitter/mongoDB/log/log.txt" } }
+2018-03-15T21:21:52.477+0900 I -        [initandlisten] Detected data files in /Users/taiga/twitter/mongoDB/data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-03-15T21:21:52.477+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-03-15T21:21:53.039+0900 I STORAGE  [initandlisten] WiredTiger message [1521116513:39812][12983:0x7fff97834340], txn-recover: Main recovery loop: starting at 2/4992
+2018-03-15T21:21:53.106+0900 I STORAGE  [initandlisten] WiredTiger message [1521116513:106400][12983:0x7fff97834340], txn-recover: Recovering log 2 through 3
+2018-03-15T21:21:53.151+0900 I STORAGE  [initandlisten] WiredTiger message [1521116513:151914][12983:0x7fff97834340], txn-recover: Recovering log 3 through 3
+2018-03-15T21:21:53.260+0900 I CONTROL  [initandlisten] 
+2018-03-15T21:21:53.261+0900 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-03-15T21:21:53.261+0900 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-03-15T21:21:53.262+0900 I CONTROL  [initandlisten] 
+2018-03-15T21:21:53.262+0900 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-03-15T21:21:53.262+0900 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-03-15T21:21:53.263+0900 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-03-15T21:21:53.263+0900 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-03-15T21:21:53.264+0900 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-03-15T21:21:53.264+0900 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-03-15T21:21:53.264+0900 I CONTROL  [initandlisten] 
+2018-03-15T21:21:53.270+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/taiga/twitter/mongoDB/data/diagnostic.data'
+2018-03-15T21:21:53.270+0900 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-03-15T21:21:56.736+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:60932 #1 (1 connection now open)
+2018-03-15T21:21:56.736+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:60932 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.3" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.4.0" } }
+2018-03-15T21:21:59.144+0900 I NETWORK  [conn1] end connection 127.0.0.1:60932 (0 connections now open)
+2018-03-15T21:22:01.916+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:60933 #2 (1 connection now open)
+2018-03-15T21:22:01.917+0900 I NETWORK  [conn2] received client metadata from 127.0.0.1:60933 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.3" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.4.0" } }
+2018-03-15T21:22:05.958+0900 I NETWORK  [conn2] end connection 127.0.0.1:60933 (0 connections now open)
+2018-03-15T21:22:08.611+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:60934 #3 (1 connection now open)
+2018-03-15T21:22:08.611+0900 I NETWORK  [conn3] received client metadata from 127.0.0.1:60934 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.3" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.4.0" } }
+2018-03-15T21:22:10.667+0900 I NETWORK  [conn3] end connection 127.0.0.1:60934 (0 connections now open)
+2018-03-16T09:05:10.349+0900 I STORAGE  [thread4] createCollection: config.system.sessions with generated UUID: 54f96e2f-bfd7-4262-a25d-ac2be0702fbc
+2018-03-16T09:05:10.412+0900 I INDEX    [thread4] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2018-03-16T09:05:10.415+0900 I INDEX    [thread4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2018-03-16T09:05:10.427+0900 I INDEX    [thread4] build index done.  scanned 0 total records. 0 secs
+2018-03-16T22:02:30.392+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:62632 #4 (1 connection now open)
+2018-03-16T22:02:30.396+0900 I NETWORK  [conn4] received client metadata from 127.0.0.1:62632 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.3" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.4.0" } }
+2018-03-16T22:03:25.832+0900 I NETWORK  [conn4] end connection 127.0.0.1:62632 (0 connections now open)
+2018-03-16T22:05:30.223+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:62639 #5 (1 connection now open)
+2018-03-16T22:05:30.223+0900 I NETWORK  [conn5] received client metadata from 127.0.0.1:62639 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.3" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.4.0" } }
+2018-03-16T22:05:33.348+0900 I NETWORK  [conn5] end connection 127.0.0.1:62639 (0 connections now open)
+2018-03-16T22:42:37.982+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:63098 #6 (1 connection now open)
+2018-03-16T22:42:37.986+0900 I NETWORK  [conn6] received client metadata from 127.0.0.1:63098 conn: { driver: { name: "PyMongo", version: "3.6.1" }, os: { type: "Darwin", name: "Darwin", architecture: "x86_64", version: "10.13.3" }, platform: "CPython 3.6.4.final.0" }
+2018-03-16T22:42:39.004+0900 I NETWORK  [conn6] end connection 127.0.0.1:63098 (0 connections now open)
+2018-03-16T22:46:26.654+0900 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 52, after asserts: 71, after backgroundFlushing: 96, after connections: 96, after dur: 96, after extra_info: 126, after globalLock: 263, after locks: 273, after logicalSessionRecordCache: 388, after network: 479, after opLatencies: 479, after opcounters: 479, after opcountersRepl: 479, after repl: 479, after security: 479, after storageEngine: 479, after transactions: 479, after wiredTiger: 636, at end: 1378 }
+2018-03-21T15:01:24.558+0900 I COMMAND  [PeriodicTaskRunner] task: UnusedLockCleaner took: 101ms
+2018-03-22T22:48:27.197+0900 I COMMAND  [PeriodicTaskRunner] task: UnusedLockCleaner took: 106ms
+2018-03-26T23:38:57.229+0900 I COMMAND  [thread8] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:134 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 47874 } } } protocol:op_msg 193ms
+2018-03-31T02:38:59.227+0900 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 0, after asserts: 0, after backgroundFlushing: 0, after connections: 0, after dur: 0, after extra_info: 0, after globalLock: 0, after locks: 0, after logicalSessionRecordCache: 0, after network: 0, after opLatencies: 0, after opcounters: 0, after opcountersRepl: 0, after repl: 0, after security: 0, after storageEngine: 0, after transactions: 0, after wiredTiger: 227226, at end: 227226 }

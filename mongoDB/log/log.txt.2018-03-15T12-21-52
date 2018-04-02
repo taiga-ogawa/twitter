@@ -1,0 +1,38 @@
+2018-03-15T21:20:19.967+0900 I CONTROL  [initandlisten] MongoDB starting : pid=12976 port=27017 dbpath=/Users/taiga/twitter/mongoDB/data 64-bit host=ogawataiganoMacBook-puro.local
+2018-03-15T21:20:19.968+0900 I CONTROL  [initandlisten] db version v3.6.3
+2018-03-15T21:20:19.968+0900 I CONTROL  [initandlisten] git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
+2018-03-15T21:20:19.968+0900 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-03-15T21:20:19.969+0900 I CONTROL  [initandlisten] allocator: system
+2018-03-15T21:20:19.969+0900 I CONTROL  [initandlisten] modules: none
+2018-03-15T21:20:19.969+0900 I CONTROL  [initandlisten] build environment:
+2018-03-15T21:20:19.969+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2018-03-15T21:20:19.970+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-03-15T21:20:19.970+0900 I CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "twitter/mongoDB/data" }, systemLog: { destination: "file", path: "twitter/mongoDB/log/log.txt" } }
+2018-03-15T21:20:19.971+0900 I -        [initandlisten] Detected data files in /Users/taiga/twitter/mongoDB/data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-03-15T21:20:19.971+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-03-15T21:20:20.547+0900 I STORAGE  [initandlisten] WiredTiger message [1521116420:546987][12976:0x7fff97834340], txn-recover: Main recovery loop: starting at 1/13440
+2018-03-15T21:20:20.614+0900 I STORAGE  [initandlisten] WiredTiger message [1521116420:614064][12976:0x7fff97834340], txn-recover: Recovering log 1 through 2
+2018-03-15T21:20:20.658+0900 I STORAGE  [initandlisten] WiredTiger message [1521116420:658509][12976:0x7fff97834340], txn-recover: Recovering log 2 through 2
+2018-03-15T21:20:20.757+0900 I CONTROL  [initandlisten] 
+2018-03-15T21:20:20.758+0900 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-03-15T21:20:20.758+0900 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-03-15T21:20:20.759+0900 I CONTROL  [initandlisten] 
+2018-03-15T21:20:20.759+0900 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-03-15T21:20:20.760+0900 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-03-15T21:20:20.760+0900 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-03-15T21:20:20.760+0900 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-03-15T21:20:20.761+0900 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-03-15T21:20:20.761+0900 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-03-15T21:20:20.762+0900 I CONTROL  [initandlisten] 
+2018-03-15T21:20:20.767+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/taiga/twitter/mongoDB/data/diagnostic.data'
+2018-03-15T21:20:20.768+0900 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-03-15T21:20:35.083+0900 I NETWORK  [listener] connection accepted from 127.0.0.1:60923 #1 (1 connection now open)
+2018-03-15T21:20:35.083+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:60923 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.3" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "17.4.0" } }
+2018-03-15T21:21:07.297+0900 I COMMAND  [conn1] terminating, shutdown command received
+2018-03-15T21:21:07.298+0900 I NETWORK  [conn1] shutdown: going to close listening sockets...
+2018-03-15T21:21:07.299+0900 I NETWORK  [conn1] removing socket file: /tmp/mongodb-27017.sock
+2018-03-15T21:21:07.300+0900 I FTDC     [conn1] Shutting down full-time diagnostic data capture
+2018-03-15T21:21:07.303+0900 I STORAGE  [conn1] WiredTigerKVEngine shutting down
+2018-03-15T21:21:07.407+0900 I STORAGE  [conn1] shutdown: removing fs lock...
+2018-03-15T21:21:07.408+0900 I CONTROL  [conn1] now exiting
+2018-03-15T21:21:07.409+0900 I CONTROL  [conn1] shutting down with code:0

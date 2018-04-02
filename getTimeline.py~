@@ -1,0 +1,26 @@
+#!/usr/bin/env python
+
+from requests_oauthlib import OAuth1Session
+import json
+
+CK = 'nTl64Z3RSxpKudGOFksvpT5Yb' #Consumer key
+CS = 'CRRK48zG5D2K0jd4GQd51eyUUHuiqnUCIY3RSGWd9xJPoum7E4' #Consumer Secret
+AT = '3066981836-HApzV7f1Xv51P1lLZjKfKZeFNM6PGFDHJSh1rQK' #Access Token
+AS = 'fPPo1EeAJGEKkTGMSsmVtANnW8iFU2EXfWujMcgb9wXFi' # Access Token Secret
+
+twitter = OAuth1Session(CK, CS, AT, AS)#認証処理
+
+#タイムライン取得のURL
+url = "https://api.twitter.com/1.1/statuses/user_timeline.json"
+
+params = {'count':5}
+res = twitter.get(url, params = params)
+
+if res.status_code == 200: #正常通信出来た場合
+    timelines = json.loads(res.text) #レスポンスからタイムラインリストを取得
+    for line in timelines: #タイムラインリストをループ処理
+        print(line['user']['name']+'::'+line['text'])
+        print(line['created_at'])
+        print('*******************************************')
+else: #正常通信出来なかった場合
+    print("Failed: %d" % res.status_code)
